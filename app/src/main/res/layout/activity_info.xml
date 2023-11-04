@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".info"
+    android:id="@+id/social">
+
+    <!-- App Icon -->
+    <ImageView
+        android:id="@+id/ivAppIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/racing"
+        android:layout_gravity="center"
+        android:contentDescription="App Icon" />
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Ride  Application"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+
+
+    <!-- App Description -->
+    <TextView
+        android:id="@+id/tvAppDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Easy-Breezy App: Effortless living in the palm of your hand. Simple, quick, and user-friendly. Smooth sailing through the digital realm"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/teal_200"
+        android:layout_marginTop="16dp" />
+
+    <!-- Contact Information -->
+    <TextView
+        android:id="@+id/tvContactInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Info"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- Social Media Icons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <!-- Facebook Icon -->
+        <ImageView
+            android:id="@+id/FacebookIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/facebook"
+            android:contentDescription="Facebook Icon"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp" />
+
+        <!-- Twitter Icon -->
+        <ImageView
+            android:id="@+id/ivTwitterIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/twitter"
+            android:contentDescription="Twitter Icon"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp" />
+
+        <!-- Instagram Icon -->
+        <ImageView
+            android:id="@+id/ivInstagramIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/instagra"
+            android:contentDescription="Instagram Icon"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/goback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:layout_marginTop = "200dp"/>
+
+</LinearLayout>

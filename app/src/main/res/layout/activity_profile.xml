@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+
+    tools:context=".Profile">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/main"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal">>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="12dp"
+            android:layout_marginStart="16dp"
+
+            android:src="@drawable/baseline_arrow_back_24" />
+        <TextView
+            android:layout_marginTop="12dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Profile!"
+    android:textStyle="italic"
+    android:textSize="45sp"
+    android:layout_marginTop="30dp"
+    android:layout_gravity="center"
+    android:textColor="@color/white"
+    android:fontFamily="serif"/>
+
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="428dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@drawable/firstshape">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="428dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+
+            <ImageView
+                android:layout_width="129dp"
+                android:layout_height="113dp"
+                android:layout_gravity="center"
+                android:background="@drawable/roundimage"
+                android:src="@drawable/userr" />
+
+
+
+            <EditText
+                android:id="@+id/profile_username"
+                style="@style/edit_text_layout"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext_bkg"
+                android:drawableLeft="@drawable/baseline_person_24"
+                android:drawablePadding="8dp"
+                android:hint="Enter Username"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/profile_email"
+                style="@style/edit_text_layout"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext_bkg"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="8dp"
+                android:hint="Email"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/profile_password"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittext_bkg"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="8dp"
+                android:hint="Password"
+                android:inputType="text"
+                android:padding="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

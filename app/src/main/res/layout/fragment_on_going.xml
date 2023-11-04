@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnGoingFragment"
+    android:orientation="vertical"
+   >
+
+    <!-- Existing TextViews -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BOOKED!!"
+        android:textSize="50sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="serif"
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pickDateLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pick Date:"
+        android:layout_marginTop="16dp"
+        style="@style/edit_text_layout"
+
+
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/pickDateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pick Up Date"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:drawableEnd="@drawable/baseline_calendar_month_24"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dropDateLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Drop Date:"
+        android:layout_marginTop="16dp"
+        style="@style/edit_text_layout"
+
+
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/dropDateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Drop Date"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:drawableEnd="@drawable/baseline_calendar_month_24"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/totalPriceLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Price :"
+        android:layout_marginTop="16dp"
+        style="@style/edit_text_layout"
+
+
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/totalPriceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total Price"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:drawableEnd="@drawable/baseline_money"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/bikeNumberLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bike Number :"
+        android:layout_marginTop="16dp"
+        style="@style/edit_text_layout"
+
+
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/bikeNumberTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bike Number"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:textColor="@color/black"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Add this FloatingActionButton to your existing layout -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/refreshButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:src="@drawable/baseline_refresh_24" />
+
+
+</LinearLayout>
